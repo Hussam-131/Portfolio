@@ -769,11 +769,13 @@ body * {
 
     .navbar.active {
         display: flex;
+        
     }
 
     .navbar a {
         margin: 1rem 0;
         font-size: 1.2rem;
+        
     }
 
     section {
@@ -892,9 +894,15 @@ body * {
 }
 
 @media (max-width: 480px) {
+    .navbar{
+        position: sticky;
+        top: 0%;
+    }
     .header {
+        /* position: sticky; */
         padding: 1rem 3%;
-        margin: 100px auto;
+        margin: 0px auto;
+       
     }
 
     .home-content h1 {
@@ -931,7 +939,7 @@ body * {
 /* New Media Queries for Larger Screens */
 @media (min-width: 1440px) {
     html {
-        font-size: 72%; /* Slight increase for readability */
+        font-size: 72%; 
         margin: 0.1%;
     }
 
@@ -957,11 +965,11 @@ body * {
     }
 
     .home-content h1 {
-        font-size: 4.2rem; /* Slightly larger than default */
+        font-size: 4.2rem; 
     }
 
     .home-content h3 {
-        font-size: 3.7rem; /* Slightly larger than default */
+        font-size: 3.7rem; 
     }
 
     .home-img img {
@@ -1095,7 +1103,7 @@ body * {
 
 @media (min-width: 1920px) {
     html {
-        font-size: 74%; /* Moderate increase */
+        font-size: 74%; 
         
     }
 
