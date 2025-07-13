@@ -474,9 +474,9 @@ span {
 }
 
 .certifications-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .certification-card {
@@ -768,9 +768,32 @@ body * {
     }
 
     .navbar.active {
-        display: flex;
-        
+        display: inline;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 1rem 4%;
+        background: rgb(44, 40, 40);
+        border-radius: 0 0 10px 10px;
+        /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); */
+        animation: fadeInDown 0.6s ease forwards;
+        z-index: 99;
+        word-spacing: 6px;
     }
+
+    
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    
 
     .navbar a {
         margin: 1rem 0;
@@ -1103,8 +1126,7 @@ body * {
 
 @media (min-width: 1920px) {
     html {
-        font-size: 74%; 
-        
+        font-size: 74%;
     }
 
     .header {
@@ -1122,7 +1144,6 @@ body * {
 
     section {
         padding: 12rem 15% 12rem;
-        
     }
 
     .home {

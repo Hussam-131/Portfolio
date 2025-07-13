@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const fadeElements = document.querySelectorAll("body *"); // Select all elements
-
+    const fadeElements = document.querySelectorAll("body *");
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -12,6 +11,5 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }, { threshold: 0.1 });
-
     fadeElements.forEach(element => observer.observe(element));
 });
